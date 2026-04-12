@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   background: #ffffff;
   padding: 5px 15px;
   color: rgb(0, 0, 0);
@@ -21,9 +22,40 @@
 .menu {
   display: flex;
   list-style: none;
-
   gap: 20px;
-   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-left: auto;
+  margin: 0;
+  padding: 0;
 }
+
+.menu li {
+  padding: 8px 14px;
+  border-radius: 8px;
+  color: #000000;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact-item {
+  position: relative;
+}
+
+.contact-details {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 230px;
+  padding: 10px 12px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+  z-index: 1000;
+}
+
+.contact-details p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #222222;
+}
+
