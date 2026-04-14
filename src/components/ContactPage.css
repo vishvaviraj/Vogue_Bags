@@ -1,0 +1,20 @@
+.contact-page {
+  max-width: 680px;
+  margin: 36px auto;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
+}
+
+.contact-page h1 {
+  margin-top: 0;
+  margin-bottom: 14px;
+  color: #0f3057;
+}
+
+.contact-page p {
+  margin: 8px 0;
+  color: #1f2937;
+  font-size: 16px;
+}

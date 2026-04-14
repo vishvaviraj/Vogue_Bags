@@ -29,33 +29,24 @@
 }
 
 .menu li {
+  padding: 0;
+}
+
+.menu-link {
+  display: inline-block;
   padding: 8px 14px;
   border-radius: 8px;
   color: #000000;
   font-weight: 600;
-  cursor: pointer;
+  text-decoration: none;
 }
 
-.contact-item {
-  position: relative;
+.menu-link:hover {
+  background: #f2f6fb;
 }
 
-.contact-details {
-  position: absolute;
-  top: calc(100% + 8px);
-  right: 0;
-  min-width: 230px;
-  padding: 10px 12px;
-  border: 1px solid #dcdcdc;
-  border-radius: 8px;
-  background: #ffffff;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
-  z-index: 1000;
-}
-
-.contact-details p {
-  margin: 6px 0;
-  font-size: 14px;
-  color: #bb11a1;
+.menu-link.active {
+  background: #0f3057;
+  color: #ffffff;
 }
 
