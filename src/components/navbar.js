@@ -27,6 +27,16 @@ function Navbar() {
             Contact
           </NavLink>
         </li>
+        <li>
+          <NavLink to="/login" className="menu-link">
+            Login
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/register" className="menu-link">
+            Register
+          </NavLink>
+        </li>
         <li>Categories</li>
       </ul>
     </nav>
