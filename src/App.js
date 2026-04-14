@@ -5,6 +5,7 @@ import Navbar from './components/navbar';
 import Footer from './components/footer';
 import Slider from './components/slider';
 import ContactPage from './components/ContactPage';
+import AboutPage from './components/AboutPage';
 
 
 function HomePage() {
@@ -24,6 +25,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </div>

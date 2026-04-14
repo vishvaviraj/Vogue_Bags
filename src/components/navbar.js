@@ -17,7 +17,11 @@ function Navbar() {
             Home
           </NavLink>
         </li>
-        <li>About</li>
+        <li>
+          <NavLink to="/about" className="menu-link">
+            About
+          </NavLink>
+        </li>
         <li>
           <NavLink to="/contact" className="menu-link">
             Contact
