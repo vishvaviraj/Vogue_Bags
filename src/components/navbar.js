@@ -8,7 +8,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="brand">
         <img src={logo} alt="logo" className="logo" />
-        <span>MyBrand</span>
+        <span>Vogue Bags</span>
       </div>
 
       <ul className="menu">
