@@ -1,5 +1,7 @@
 import React from 'react';
 import './AboutPage.css';
+import img1 from './images/about.avif';
+import img4 from './images/banner3.avif';
 
 function AboutPage() {
   return (
@@ -17,6 +19,7 @@ function AboutPage() {
         Our goal is simple: create bags that feel premium, look great, and stay
         useful for years.
       </p>
+      <img src={img1} alt="About Vogue Bags" />
     </section>
   );
 }
