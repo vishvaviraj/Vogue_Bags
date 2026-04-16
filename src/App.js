@@ -44,14 +44,6 @@ function App() {
             path="/categories/kids-bags"
             element={<CategoryProductsPage title="Kids Bags" />}
           />
-          <Route
-            path="/categories/luggages"
-            element={<CategoryProductsPage title="Luggages" />}
-          />
-          <Route
-            path="/categories/wallets"
-            element={<CategoryProductsPage title="Wallets" />}
-          />
         </Routes>
       </div>
     </BrowserRouter>

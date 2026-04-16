@@ -53,12 +53,8 @@ function Navbar() {
               <Link to="/categories/kids-bags" className="dropdown-link" onClick={() => setShowCategories(false)}>
                 Kids Bags
               </Link>
-              <Link to="/categories/luggages" className="dropdown-link" onClick={() => setShowCategories(false)}>
-                Luggages
-              </Link>
-              <Link to="/categories/wallets" className="dropdown-link" onClick={() => setShowCategories(false)}>
-                Wallets
-              </Link>
+              
+              
             </div>
           )}
         </li>
