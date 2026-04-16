@@ -1,10 +1,10 @@
 import React from 'react';
 import './CategoryProductsPage.css';
-import handbag1 from './images/handbag1.jpg';
+import handbag1 from './images/handbag1.jpeg';
 import handbag2 from './images/handbag2.jpg';
 import handbag3 from './images/handbag3.jpg';
 import handbag4 from './images/handbag4.jpg';   
-import handbag5 from './images/handbag5.png';
+import handbag5 from './images/handbag5.jpeg';
 import backpack1 from './images/backpack1.jpg';
 import backpack2 from './images/backpack2.jpg';
 import backpack3 from './images/backpack3.jpg';
@@ -12,11 +12,11 @@ import backpack4 from './images/backpack4.jpg';
 import backpack5 from './images/backpack5.jpg';
 function CategoryProductsPage({ title }) {
   const handBagProducts = [
-    { id: 1, name: 'Hand Bag 1', image: handbag1, price: 'Rs. 4999.99' },
-    { id: 2, name: 'Hand Bag 2', image: handbag2, price: 'Rs. 5999.99' },
-    { id: 3, name: 'Hand Bag 3', image: handbag3, price: 'Rs. 6999.99' },
-    { id: 4, name: 'Hand Bag 4', image: handbag4, price: 'Rs. 7999.99' },
-    { id: 5, name: 'Hand Bag 5', image: handbag5, price: 'Rs. 8999.99' }
+    { id: 1, name: 'Handbags For Women Shoulder Bags Casual Leather Messenger Bag Large Capacity Handbag Women\'s ', image: handbag1, price: 'Rs. 4999.99' },
+    { id: 2, name: 'Home Ladies Purse Handbag The Perfect Double Strap Tote Rose Pink', image: handbag2, price: 'Rs. 5999.99' },
+    { id: 3, name: 'Fashion Woman Bag Female Hand Tote Bag Messenger Shoulder Bag Lady HandBag ', image: handbag3, price: 'Rs. 6999.99' },
+    { id: 4, name: 'IONIKK Shoulder Bag for Women Embroidered Women Leather Handbags Hand Bags For Women', image: handbag4, price: 'Rs. 7999.99' },
+    { id: 5, name: 'Genuine Leather Luxury Ladies Handbag ', image: handbag5, price: 'Rs. 8999.99' }
   ];
 
 
