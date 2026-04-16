@@ -46,8 +46,9 @@
 }
 
 .menu-link.active {
-  background: #0f3057;
-  color: #ffffff;
+  background: 
+  #ffffff;
+  color: #000000;
 }
 
 .categories-item {
