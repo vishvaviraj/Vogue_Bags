@@ -6,9 +6,9 @@ function ContactPage() {
     <section className="contact-page">
       <h1>Contact Details</h1>
       <p>Email: voguebags@gmail.com</p>
-      <p>Phone: +91 98765 43210</p>
-      <p>WhatsApp: +91 98765 43210</p>
-      <p>Address: Coimbatore, Tamil Nadu, India</p>
+      <p>Phone: 077 123 4567</p>
+      <p>WhatsApp: 077 123 4567</p>
+      <p>Address: 32/A Kiulapona,Colombo 05</p>
     </section>
   );
 }
