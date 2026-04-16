@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import "./navbar.css";
-import logo from "../logo22.jpg";
+import logo from "../logo22.png";
 
 function Navbar() {
   const [showCategories, setShowCategories] = useState(false);
