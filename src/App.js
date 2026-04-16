@@ -8,6 +8,7 @@ import ContactPage from './components/ContactPage';
 import AboutPage from './components/AboutPage';
 import LoginPage from './components/LoginPage';
 import RegisterPage from './components/RegisterPage';
+import CategoryProductsPage from './components/CategoryProductsPage';
 
 
 function HomePage() {
@@ -31,6 +32,26 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
+          <Route
+            path="/categories/backpack"
+            element={<CategoryProductsPage title="Back Pack" />}
+          />
+          <Route
+            path="/categories/hand-bags"
+            element={<CategoryProductsPage title="Hand Bags" />}
+          />
+          <Route
+            path="/categories/kids-bags"
+            element={<CategoryProductsPage title="Kids Bags" />}
+          />
+          <Route
+            path="/categories/luggages"
+            element={<CategoryProductsPage title="Luggages" />}
+          />
+          <Route
+            path="/categories/wallets"
+            element={<CategoryProductsPage title="Wallets" />}
+          />
         </Routes>
       </div>
     </BrowserRouter>

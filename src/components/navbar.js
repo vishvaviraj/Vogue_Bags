@@ -1,9 +1,15 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState } from "react";
+import { NavLink, Link } from "react-router-dom";
 import "./navbar.css";
 import logo from "../logo22.jpg";
 
 function Navbar() {
+  const [showCategories, setShowCategories] = useState(false);
+
+  const toggleCategories = () => {
+    setShowCategories((prev) => !prev);
+  };
+
   return (
     <nav className="navbar">
       <div className="brand">
@@ -37,7 +43,30 @@ function Navbar() {
             Register
           </NavLink>
         </li>
-        <li>Categories</li>
+        <li className="categories-item">
+          <button type="button" className="menu-link menu-button" onClick={toggleCategories}>
+            Categories
+          </button>
+          {showCategories && (
+            <div className="categories-dropdown">
+              <Link to="/categories/backpack" className="dropdown-link" onClick={() => setShowCategories(false)}>
+                Back Pack
+              </Link>
+              <Link to="/categories/hand-bags" className="dropdown-link" onClick={() => setShowCategories(false)}>
+                Hand Bags
+              </Link>
+              <Link to="/categories/kids-bags" className="dropdown-link" onClick={() => setShowCategories(false)}>
+                Kids Bags
+              </Link>
+              <Link to="/categories/luggages" className="dropdown-link" onClick={() => setShowCategories(false)}>
+                Luggages
+              </Link>
+              <Link to="/categories/wallets" className="dropdown-link" onClick={() => setShowCategories(false)}>
+                Wallets
+              </Link>
+            </div>
+          )}
+        </li>
       </ul>
     </nav>
   );

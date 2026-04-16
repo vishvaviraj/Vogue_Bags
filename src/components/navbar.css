@@ -50,3 +50,39 @@
   color: #ffffff;
 }
 
+.categories-item {
+  position: relative;
+}
+
+.menu-button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.categories-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 170px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+  border: 1px solid #e5e7eb;
+  padding: 6px;
+  z-index: 100;
+}
+
+.dropdown-link {
+  display: block;
+  padding: 8px 10px;
+  border-radius: 6px;
+  color: #111827;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.dropdown-link:hover {
+  background: #f3f4f6;
+}
+
