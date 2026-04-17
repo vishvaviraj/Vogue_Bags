@@ -21,13 +21,13 @@
   margin-top: 0;
   margin-bottom: 50px;
   align-items: center;
-  color: hsl(17, 100%, 1%);
+  color: hsl(14, 65%, 33%);
   font-size: 32px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .about-page p {
-    align-items: center;
+    align-items:last baseline;
   margin: 5px 0;
   color: #d29a9a;
   font-size: 16px;
