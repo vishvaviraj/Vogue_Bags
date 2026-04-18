@@ -39,6 +39,7 @@ function Slider() {
       </div>
     </div>
   );
+  <div> <p>April Awurudu Sale</p></div>
 }
 
 export default Slider;
