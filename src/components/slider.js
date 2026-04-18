@@ -36,10 +36,10 @@ function Slider() {
             onClick={() => setCurrent(index)}
           ></span>
         ))}
-      </div>
+      </div> <br /><p className="slider-text">Discover our latest collection of stylish and functional bags, designed to elevate your everyday look.</p>  
     </div>
   );
-  <div> <p>April Awurudu Sale</p></div>
+ 
 }
 
 export default Slider;

@@ -53,3 +53,9 @@
 .dot.active {
   background: white;
 }
+.slider-text{
+  text-align: center;
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 500px;
+}
