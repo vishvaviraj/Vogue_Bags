@@ -1,8 +1,13 @@
+.slider-section {
+  width: 100%;
+  padding: 24px 0 8px;
+}
+
 .slider {
   position: relative;
   width: 75%;
   height: 75%;
-  margin: 24px auto;
+  margin: 16px auto 24px;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -53,9 +58,13 @@
 .dot.active {
   background: white;
 }
-.slider-text{
+.slider-heading{
   text-align: center;
   color: #333;
-  font-size: 18px;
-  margin-top: 10px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0 auto;
+  max-width: 820px;
+  padding: 0 16px;
 }

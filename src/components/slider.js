@@ -8,8 +8,7 @@ import img4 from "./images/img3.png";
 
 
 const images = [img1, img2, img3, img4,];
-<div> <h1 className="slider-text">Discover our latest collection of stylish and functional bags, designed to elevate your everyday look.</h1>  
-    </div>
+
 function Slider() {
   const [current, setCurrent] = useState(0);
 
@@ -22,21 +21,27 @@ function Slider() {
   };
 
   return (
-    <div className="slider">
-      <button className="left" onClick={prevSlide}>❮</button>
+    <div className="slider-section">
+      <h1 className="slider-heading">
+        Discover our latest collection of stylish and functional bags, designed to elevate your everyday look.
+      </h1>
 
-      <img src={images[current]} alt="slide" className="slide-image" />
+      <div className="slider">
+        <button className="left" onClick={prevSlide}>❮</button>
 
-      <button className="right" onClick={nextSlide}>❯</button>
+        <img src={images[current]} alt="slide" className="slide-image" />
 
-      <div className="dots">
-        {images.map((_, index) => (
-          <span
-            key={index}
-            className={index === current ? "dot active" : "dot"}
-            onClick={() => setCurrent(index)}
-          ></span>
-        ))}
+        <button className="right" onClick={nextSlide}>❯</button>
+
+        <div className="dots">
+          {images.map((_, index) => (
+            <span
+              key={index}
+              className={index === current ? "dot active" : "dot"}
+              onClick={() => setCurrent(index)}
+            ></span>
+          ))}
+        </div>
       </div>
     </div>
   );

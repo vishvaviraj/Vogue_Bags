@@ -15,8 +15,8 @@ function HomePage() {
   return (
     <>
       <PartOne />
-      <Footer />
       <Slider />
+      <Footer />
     </>
   );
 }
