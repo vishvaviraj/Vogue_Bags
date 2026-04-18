@@ -8,7 +8,8 @@ import img4 from "./images/img3.png";
 
 
 const images = [img1, img2, img3, img4,];
-
+<div> <h1 className="slider-text">Discover our latest collection of stylish and functional bags, designed to elevate your everyday look.</h1>  
+    </div>
 function Slider() {
   const [current, setCurrent] = useState(0);
 
@@ -36,7 +37,7 @@ function Slider() {
             onClick={() => setCurrent(index)}
           ></span>
         ))}
-      </div> <br /><p className="slider-text">Discover our latest collection of stylish and functional bags, designed to elevate your everyday look.</p>  
+      </div>
     </div>
   );
  
