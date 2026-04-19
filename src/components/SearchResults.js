@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import './SearchResults.css';
-import handbag1 from './images/handbag1.jpeg';
+import handbag1 from './images/handbag1.jpg';
 import handbag2 from './images/handbag2.jpg';
 import handbag3 from './images/handbag3.jpg';
 import handbag4 from './images/handbag4.jpg';

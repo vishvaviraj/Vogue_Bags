@@ -1,4 +1,4 @@
-import handbag1 from './images/handbag1.jpeg';
+import handbag1 from './images/handbag1.jpg';
 import handbag2 from './images/handbag2.jpg';
 import handbag3 from './images/handbag3.jpg';
 import backpack1 from './images/backpack1.jpg';
