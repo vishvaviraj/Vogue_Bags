@@ -4,6 +4,7 @@ import PartOne from './components/PartOne';
 import Navbar from './components/navbar'; 
 import Footer from './components/footer';
 import Slider from './components/slider';
+import HomeProductsSection from './components/HomeProductsSection';
 import FeaturesSection from './components/FeaturesSection';
 import ContactPage from './components/ContactPage';
 import AboutPage from './components/AboutPage';
@@ -11,6 +12,7 @@ import LoginPage from './components/LoginPage';
 import RegisterPage from './components/RegisterPage';
 import CategoryProductsPage from './components/CategoryProductsPage';
 import SearchResults from './components/SearchResults';
+import ProductDetailsPage from './components/ProductDetailsPage';
 
 
 function HomePage() {
@@ -18,6 +20,7 @@ function HomePage() {
     <>
       <PartOne />
       <Slider />
+      <HomeProductsSection />
       <FeaturesSection />
       <Footer />
     </>
@@ -36,6 +39,7 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/search" element={<SearchResults />} />
+          <Route path="/product/:productId" element={<ProductDetailsPage />} />
           <Route
             path="/categories/backpack"
             element={<CategoryProductsPage title="Back Pack" />}
