@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Slider.css";
 
 import img1 from "./images/img4.png";
@@ -19,6 +19,14 @@ function Slider() {
   const prevSlide = () => {
     setCurrent((current - 1 + images.length) % images.length);
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % images.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="slider-section">

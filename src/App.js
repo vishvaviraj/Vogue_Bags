@@ -9,6 +9,7 @@ import AboutPage from './components/AboutPage';
 import LoginPage from './components/LoginPage';
 import RegisterPage from './components/RegisterPage';
 import CategoryProductsPage from './components/CategoryProductsPage';
+import SearchResults from './components/SearchResults';
 
 
 function HomePage() {
@@ -32,6 +33,7 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
+          <Route path="/search" element={<SearchResults />} />
           <Route
             path="/categories/backpack"
             element={<CategoryProductsPage title="Back Pack" />}

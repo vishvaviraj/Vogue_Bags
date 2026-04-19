@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useNavigate } from "react-router-dom";
 import "./navbar.css";
 import logo from "../logo22.png";
 
 function Navbar() {
   const [showCategories, setShowCategories] = useState(false);
   const [showAccountMenu, setShowAccountMenu] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
+  const navigate = useNavigate();
 
   const toggleCategories = () => {
     setShowCategories((prev) => !prev);
@@ -15,12 +17,33 @@ function Navbar() {
     setShowAccountMenu((prev) => !prev);
   };
 
+  const handleSearch = (e) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      navigate(`/search?q=${encodeURIComponent(searchQuery)}`);
+      setSearchQuery("");
+    }
+  };
+
   return (
     <nav className="navbar">
       <div className="brand">
         <img src={logo} alt="logo" className="logo" />
         <span>Vogue Bags</span>
       </div>
+
+      <form className="search-bar" onSubmit={handleSearch}>
+        <input
+          type="text"
+          placeholder="Search products..."
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          className="search-input"
+        />
+        <button type="submit" className="search-button">
+          🔍
+        </button>
+      </form>
 
       <ul className="menu">
         <li>

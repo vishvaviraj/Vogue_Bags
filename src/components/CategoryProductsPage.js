@@ -10,6 +10,11 @@ import backpack2 from './images/backpack2.jpg';
 import backpack3 from './images/backpack3.jpg';
 import backpack4 from './images/backpack4.jpg';
 import backpack5 from './images/backpack5.jpg';
+import bag1 from './images/bag1.jpg';
+import bag2 from './images/bag2.jpeg';
+import bag3 from './images/bag3.jpg';
+import bag4 from './images/bag4.jpeg';
+import bag5 from './images/bag5.avif';
 function CategoryProductsPage({ title }) {
   const handBagProducts = [
     { id: 1, name: 'Handbags For Women Shoulder Bags Casual Leather Messenger Bag Large Capacity Handbag Women\'s ', image: handbag1, price: 'Rs. 4999.99' },
@@ -33,10 +38,19 @@ function CategoryProductsPage({ title }) {
     { id: 4, name: ' Louiswill Laptop Backpack Water Resistant Bag Casual Business Laptop Bag ', image: backpack4, price: 'Rs. 6999.99' },
     { id: 5, name: 'Outdoor Waterproof Travel Backpack for, Laptop Bag, Climbing, Sports, Hiking Rucksack(C)', image: backpack5, price: 'Rs. 7999.99' }
   ];
+const kidsbagProducts = [
+    { id: 1, name: 'Stylbase Car Kids School Bags for Boys And Girls Printed Cartoon Water – Resistant Backpack for Kids', image: bag1, price: 'Rs. 1999.99' },
+    { id: 2, name: 'Kids School Bag for Boys and Girls, Water Resistant, Lightweight and Durable', image: bag2, price: 'Rs. 2999.99' },
+    { id: 3, name: 'Children\'s Backpack for School, Cute Cartoon Design, Multiple Pockets', image: bag3, price: 'Rs. 3999.99' },
+    { id: 4, name: 'Toddler Backpack for Kids, Colorful and Fun Design, Easy to Carry', image: bag4, price: 'Rs. 4999.99' },
+    { id: 5, name: 'Boys Girls School Backpack, Lightweight and Durable, Multiple Compartments', image: bag5, price: 'Rs. 5999.99' }
+  ];
+
 
   const productsByCategory = {
     'Hand Bags': handBagProducts,
     'Back Pack': backpackProducts,
+    'Kids Bags': kidsbagProducts,
   };
 
   const products = productsByCategory[title] || defaultProducts;

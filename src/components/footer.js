@@ -2,7 +2,7 @@
 function Footer() {
   return (
     <footer style={styles.footer}>
-      <p>© 2026 MyApp. All rights reserved.</p>
+      <p>© 2026 . All rights reserved.</p>
     </footer>
   );
 }
@@ -13,8 +13,6 @@ const styles = {
     color: "white",
     textAlign: "center",
     padding: "10px",
-    position: "fixed",
-    bottom: 0,
     width: "100%",
   },
 };
