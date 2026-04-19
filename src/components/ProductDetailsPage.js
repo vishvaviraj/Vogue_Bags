@@ -1,18 +1,21 @@
 import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useLocation } from 'react-router-dom';
 import './ProductDetailsPage.css';
 import { getProductById } from './productsData';
 
 function ProductDetailsPage() {
   const { productId } = useParams();
-  const product = getProductById(productId);
+  const location = useLocation();
+  const productFromState = location.state?.product;
+  const product = productFromState || getProductById(productId);
+  const backPath = location.state?.fromPath || '/';
 
   if (!product) {
     return (
       <section className="product-details-page">
         <h1>Product Not Found</h1>
         <p>The product you selected is not available.</p>
-        <Link to="/" className="details-home-link">
+        <Link to={backPath} className="details-home-link">
           Go Back Home
         </Link>
       </section>
@@ -46,7 +49,7 @@ function ProductDetailsPage() {
               Buy Now
             </button>
           </div>
-          <Link to="/" className="details-home-link">
+          <Link to={backPath} className="details-home-link">
             Continue Shopping
           </Link>
         </div>

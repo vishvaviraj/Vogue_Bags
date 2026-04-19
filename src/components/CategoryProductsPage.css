@@ -42,10 +42,25 @@
   display: block;
 }
 
+.product-image-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .product-card h3 {
   margin: 12px 0 8px;
   color: #111827;
   font-size: 16px;
+}
+
+.product-name-link {
+  color: #111827;
+  text-decoration: none;
+}
+
+.product-name-link:hover {
+  text-decoration: underline;
 }
 
 .product-price {

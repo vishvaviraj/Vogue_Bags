@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import './CategoryProductsPage.css';
 import handbag1 from './images/handbag1.jpg';
 import handbag2 from './images/handbag2.jpg';
@@ -16,6 +17,8 @@ import bag3 from './images/bag3.jpg';
 import bag4 from './images/bag4.jpeg';
 import bag5 from './images/bag5.avif';
 function CategoryProductsPage({ title }) {
+  const location = useLocation();
+
   const handBagProducts = [
     { id: 1, name: 'Handbags For Women Shoulder Bags Casual Leather Messenger Bag Large Capacity Handbag Women\'s ', image: handbag1, price: 'Rs. 4999.99', description: 'Large-capacity casual leather handbag with secure zip and comfortable shoulder carry.' },
     { id: 2, name: 'Home Ladies Purse Handbag The Perfect Double Strap Tote Rose Pink', image: handbag2, price: 'Rs. 5999.99', description: 'Double strap rose pink tote designed for daily office use and casual styling.' },
@@ -72,12 +75,26 @@ const kidsbagProducts = [
           <article key={product.id} className="product-card">
             <div className="product-image-placeholder">
               {product.image ? (
-                <img src={product.image} alt={product.name} className="product-image" />
+                <Link
+                  to={`/product/${title.toLowerCase().replace(/\s+/g, '-')}-${product.id}`}
+                  state={{ product: { ...product, category: title }, fromPath: location.pathname }}
+                  className="product-image-link"
+                >
+                  <img src={product.image} alt={product.name} className="product-image" />
+                </Link>
               ) : (
                 <span>Product Photo</span>
               )}
             </div>
-            <h3>{product.name}</h3>
+            <h3>
+              <Link
+                to={`/product/${title.toLowerCase().replace(/\s+/g, '-')}-${product.id}`}
+                state={{ product: { ...product, category: title }, fromPath: location.pathname }}
+                className="product-name-link"
+              >
+                {product.name}
+              </Link>
+            </h3>
             <p className="product-price">{product.price}</p>
             <p className="product-description">{product.description}</p>
             <div className="product-actions">
