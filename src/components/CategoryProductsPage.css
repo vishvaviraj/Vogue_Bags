@@ -48,8 +48,41 @@
   font-size: 16px;
 }
 
-.product-card p {
-  margin: 0;
+.product-price {
+  margin: 0 0 8px;
+  color: #b45309;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.product-description {
+  margin: 0 0 12px;
   color: #4b5563;
   font-size: 14px;
+  line-height: 1.5;
+  min-height: 64px;
+}
+
+.product-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.product-btn {
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-weight: 600;
+  cursor: pointer;
+  flex: 1;
+}
+
+.product-btn-primary {
+  background: #111827;
+  color: #ffffff;
+}
+
+.product-btn-secondary {
+  background: #f59e0b;
+  color: #111827;
 }
