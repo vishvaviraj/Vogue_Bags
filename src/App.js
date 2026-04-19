@@ -4,6 +4,7 @@ import PartOne from './components/PartOne';
 import Navbar from './components/navbar'; 
 import Footer from './components/footer';
 import Slider from './components/slider';
+import FeaturesSection from './components/FeaturesSection';
 import ContactPage from './components/ContactPage';
 import AboutPage from './components/AboutPage';
 import LoginPage from './components/LoginPage';
@@ -17,6 +18,7 @@ function HomePage() {
     <>
       <PartOne />
       <Slider />
+      <FeaturesSection />
       <Footer />
     </>
   );
