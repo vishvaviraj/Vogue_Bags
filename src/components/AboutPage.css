@@ -28,10 +28,10 @@
 
 .about-page p {
     align-items:center;
-  color: #f46f4e;
+    font-weight: 400;
+  color: #686666;
   font-size: 16px;
-  line-height: 1.6;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  line-height: 1;
 }
 .about-page img {
   width: 50%;
