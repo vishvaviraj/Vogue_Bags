@@ -2,7 +2,7 @@
 function Footer() {
   return (
     <footer style={styles.footer}>
-      <p>© 2026 . All rights reserved.</p>
+      <p>© 2026 my app . All rights reserved.</p>
     </footer>
   );
 }
