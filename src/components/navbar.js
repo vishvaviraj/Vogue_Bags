@@ -41,7 +41,15 @@ function Navbar() {
           className="search-input"
         />
         <button type="submit" className="search-button">
-          🔍
+          <svg
+            className="search-icon"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <circle cx="10" cy="10" r="6" fill="none" strokeWidth="2" stroke="currentColor"/>
+            <path d="M14 14l6 6" strokeWidth="2" stroke="currentColor" strokeLinecap="round"/>
+          </svg>
         </button>
       </form>
 

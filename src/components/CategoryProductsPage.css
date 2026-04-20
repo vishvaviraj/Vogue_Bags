@@ -93,11 +93,11 @@
 }
 
 .product-btn-primary {
-  background: #111827;
+  background: #8eb2ff;
   color: #ffffff;
 }
 
 .product-btn-secondary {
-  background: #f59e0b;
-  color: #111827;
+  background: hwb(23 20% 0%);
+  color: #ffffff;
 }

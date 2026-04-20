@@ -61,6 +61,16 @@
   color: #d97706;
 }
 
+.search-icon {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .menu {
   display: flex;
   list-style: none;

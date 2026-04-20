@@ -47,7 +47,7 @@ const kidsbagProducts = [
     { id: 2, name: 'Kids School Bag for Boys and Girls, Water Resistant, Lightweight and Durable', image: bag2, price: 'Rs. 2999.99', description: 'Durable lightweight kids school backpack with comfortable shoulder support.' },
     { id: 3, name: 'Children\'s Backpack for School, Cute Cartoon Design, Multiple Pockets', image: bag3, price: 'Rs. 3999.99', description: 'Cute cartoon backpack featuring multiple pockets for books and lunch box.' },
     { id: 4, name: 'Toddler Backpack for Kids, Colorful and Fun Design, Easy to Carry', image: bag4, price: 'Rs. 4999.99', description: 'Colorful toddler backpack sized for easy carry and day-to-day essentials.' },
-    { id: 5, name: 'Boys Girls School Backpack, Lightweight and Durable, Multiple Compartments', image: bag5, price: 'Rs. 5999.99', description: 'Spacious school backpack with strong stitching and practical compartments.' }
+    { id: 5, name: 'Girls School Backpack, Lightweight and Durable, Multiple Compartments', image: bag5, price: 'Rs. 5999.99', description: 'Spacious school backpack with strong stitching and practical compartments.' }
   ];
 
 
