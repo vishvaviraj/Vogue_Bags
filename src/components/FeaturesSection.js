@@ -19,7 +19,7 @@ function FeaturesSection() {
       <div className="feature-item">
         <div className="feature-icon">🏠</div>
         <h3>FREE CUSTOMER SUPPORT</h3>
-        <p>Support 24/7 online</p>
+        <p>Support 24 hours online</p>
       </div>
     </section>
   );
