@@ -16,7 +16,7 @@ function AboutPage() {
         fit every lifestyle.
       </p>
       <p>
-        Our goal is simple: create bags that feel premium, look great, and stay
+        Our goal is simple: create bags that feel premium, and stay
         useful for years.
       </p>
       <img src={img1} alt="About Vogue Bags" />
