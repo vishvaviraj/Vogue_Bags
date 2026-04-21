@@ -67,12 +67,12 @@
 }
 
 .details-btn-primary {
-  background: #111827;
+  background: #8eb2ff;   
   color: #ffffff;
 }
 
 .details-btn-secondary {
-  background: #f59e0b;
+  background: hwb(23 20% 0%);;
   color: #111827;
 }
 
