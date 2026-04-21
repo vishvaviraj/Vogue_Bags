@@ -36,11 +36,11 @@ function CategoryProductsPage({ title }) {
   }));
 
   const backpackProducts = [
-    { id: 1, name: ' JD Backpack Laptop Bag, Multi layer storage for fast travel. ', image: backpack1, price: 'Rs. 3999.99', description: 'Multi-layer laptop backpack with quick-access pockets for travel and work.' },
-    { id: 2, name: ' AVI Unisex Backpack Blue ,PU leather Travel Backpack ', image: backpack2, price: 'Rs. 4999.99', description: 'Stylish blue unisex travel backpack with PU leather finish and spacious design.' },
-    { id: 3, name: ' JD soundcore Backpack  ', image: backpack3, price: 'Rs. 5999.99', description: 'Everyday casual backpack with strong build and smart internal organization.' },
-    { id: 4, name: ' Louiswill Laptop Backpack Water Resistant Bag Casual Business Laptop Bag ', image: backpack4, price: 'Rs. 6999.99', description: 'Water-resistant business backpack ideal for laptops, files, and accessories.' },
-    { id: 5, name: 'Outdoor Waterproof Travel Backpack for, Laptop Bag, Climbing, Sports, Hiking Rucksack(C)', image: backpack5, price: 'Rs. 7999.99', description: 'Outdoor-ready waterproof rucksack built for climbing, sports, and hiking.' }
+    { id: 1, name: ' JD Backpack Laptop Bag, Multi layer storage for fast travel. ', image: backpack1, price: 'Rs. 3999.00', description: 'Multi-layer laptop backpack with quick-access pockets for travel and work.' },
+    { id: 2, name: ' AVI Unisex Backpack Blue ,PU leather Travel Backpack ', image: backpack2, price: 'Rs. 4999.00', description: 'Stylish blue unisex travel backpack with PU leather finish and spacious design.' },
+    { id: 3, name: ' JD soundcore Backpack  ', image: backpack3, price: 'Rs. 5999.00', description: 'Everyday casual backpack with strong build and smart internal organization.' },
+    { id: 4, name: ' Louiswill Laptop Backpack Water Resistant Bag Casual Business Laptop Bag ', image: backpack4, price: 'Rs. 5999.00', description: 'Water-resistant business backpack ideal for laptops, files, and accessories.' },
+    { id: 5, name: 'Outdoor Waterproof Travel Backpack for, Laptop Bag, Climbing, Sports, Hiking Rucksack(C)', image: backpack5, price: 'Rs. 7999.00', description: 'Outdoor-ready waterproof rucksack built for climbing, sports, and hiking.' }
   ];
 const kidsbagProducts = [
     { id: 1, name: 'Stylbase Car Kids School Bags for Boys And Girls Printed Cartoon Water – Resistant Backpack for Kids', image: bag1, price: 'Rs. 1999.99', description: 'Fun cartoon print school bag with water-resistant material and light carry.' },
