@@ -1,6 +1,7 @@
 .home-products-section {
-  max-width: 800px;
-  margin: 24px auto 12px;
+  max-width: 1000px;
+  
+  margin: 24px auto 14px;
   padding: 0 20px;
 }
 
@@ -43,10 +44,11 @@
 .home-product-name-link {
   color: #111827;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .home-product-name-link:hover {
-  text-decoration: underline;
+  text-decoration:underline;
 }
 
 .home-product-card h3 {
@@ -58,7 +60,7 @@
 .home-product-price {
   margin: 0 0 12px;
   color: #b45309;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .home-product-actions {
