@@ -21,7 +21,7 @@ export const categoryProducts = {
       category: 'Hand Bags',
       name: "Handbags For Women Shoulder Bags Casual Leather Messenger Bag Large Capacity Handbag Women's",
       image: handbag1,
-      price: 'Rs. 4,999.99',
+      price: 'Rs. 5,999.99',
       description:
         'Large-capacity casual leather handbag with secure zip and comfortable shoulder carry.',
     },
