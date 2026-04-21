@@ -8,6 +8,7 @@ function HomeProductsSection() {
 
   const handbags = homeProducts.filter((product) => product.category === 'Hand Bags');
   const backpacks = homeProducts.filter((product) => product.category === 'Back Pack');
+  const kidsBags = homeProducts.filter((product) => product.category === 'Kids Bags');
 
   const handleAddToCart = (productName) => {
     alert(`${productName} added to cart.`);
@@ -50,6 +51,7 @@ function HomeProductsSection() {
     <section className="home-products-section">
       {renderRow('Hand Bags', handbags)}
       {renderRow('Back Packs', backpacks)}
+      {renderRow('Kids Bags', kidsBags)}
     </section>
   );
 }

@@ -159,8 +159,9 @@ export const categoryProducts = {
 };
 
 export const homeProducts = [
-  ...categoryProducts['Hand Bags'].slice(0, 3),
-  ...categoryProducts['Back Pack'].slice(0, 3),
+  ...categoryProducts['Hand Bags'].slice(0, 4),
+  ...categoryProducts['Back Pack'].slice(0, 4),
+  ...categoryProducts['Kids Bags'].slice(0, 4),
 ];
 
 const allProducts = Object.values(categoryProducts).flat();
