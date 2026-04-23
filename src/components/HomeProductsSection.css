@@ -26,6 +26,9 @@
   border-radius: 10px;
   background: #ffffff;
   padding: 12px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .home-product-image-link {
@@ -66,6 +69,7 @@
 .home-product-actions {
   display: flex;
   gap: 8px;
+  margin-top: auto;
 }
 
 .home-btn {
