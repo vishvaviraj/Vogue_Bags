@@ -49,14 +49,10 @@ function App() {
     return saved ? JSON.parse(saved) : [];
   });
 
+  // Only save when cartItems actually change, we use a ref to prevent saving on user switch
   useEffect(() => {
     localStorage.setItem(getCartKey(currentUser), JSON.stringify(cartItems));
   }, [cartItems, currentUser]);
-
-  useEffect(() => {
-    const saved = localStorage.getItem(getCartKey(currentUser));
-    setCartItems(saved ? JSON.parse(saved) : []);
-  }, [currentUser]);
 
   const handleAddToCart = (product) => {
     setCartItems((prevItems) => {
@@ -80,12 +76,16 @@ function App() {
     localStorage.setItem('authToken', token);
     localStorage.setItem('authUser', JSON.stringify(user));
     setCurrentUser(user);
+    const saved = localStorage.getItem(getCartKey(user));
+    setCartItems(saved ? JSON.parse(saved) : []);
   };
 
   const handleLogout = () => {
     localStorage.removeItem('authToken');
     localStorage.removeItem('authUser');
     setCurrentUser(null);
+    const saved = localStorage.getItem(getCartKey(null));
+    setCartItems(saved ? JSON.parse(saved) : []);
   };
 
   return (
