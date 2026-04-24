@@ -35,14 +35,28 @@ function App() {
     return savedUser ? JSON.parse(savedUser) : null;
   });
 
+  const getCartKey = (user) => {
+    if (user && user.email) {
+      return `vogue-cart-items-${user.email}`;
+    }
+    return 'vogue-cart-items-guest';
+  };
+
   const [cartItems, setCartItems] = useState(() => {
-    const saved = localStorage.getItem('vogue-cart-items');
+    const savedUser = localStorage.getItem('authUser');
+    const user = savedUser ? JSON.parse(savedUser) : null;
+    const saved = localStorage.getItem(getCartKey(user));
     return saved ? JSON.parse(saved) : [];
   });
 
   useEffect(() => {
-    localStorage.setItem('vogue-cart-items', JSON.stringify(cartItems));
-  }, [cartItems]);
+    localStorage.setItem(getCartKey(currentUser), JSON.stringify(cartItems));
+  }, [cartItems, currentUser]);
+
+  useEffect(() => {
+    const saved = localStorage.getItem(getCartKey(currentUser));
+    setCartItems(saved ? JSON.parse(saved) : []);
+  }, [currentUser]);
 
   const handleAddToCart = (product) => {
     setCartItems((prevItems) => {
