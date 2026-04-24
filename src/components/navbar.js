@@ -3,7 +3,7 @@ import { NavLink, Link, useNavigate } from "react-router-dom";
 import "./navbar.css";
 import logo from "../logo22.png";
 
-function Navbar() {
+function Navbar({ cartCount, currentUser, onLogout }) {
   const [showCategories, setShowCategories] = useState(false);
   const [showAccountMenu, setShowAccountMenu] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
@@ -90,6 +90,16 @@ function Navbar() {
           )}
         </li>
         <li className="account-item">
+          <NavLink to="/cart" className="menu-link menu-button cart-link" aria-label="Open cart">
+            <svg className="cart-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <circle cx="9" cy="20" r="1.5" />
+              <circle cx="18" cy="20" r="1.5" />
+              <path d="M3 4h2l2.1 10.2c.1.5.5.8 1 .8h9.9c.5 0 .9-.3 1-.8L21 7H7" />
+            </svg>
+            {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
+          </NavLink>
+        </li>
+        <li className="account-item">
           <button
             type="button"
             className="menu-link menu-button account-button"
@@ -108,12 +118,33 @@ function Navbar() {
           </button>
           {showAccountMenu && (
             <div className="account-dropdown">
-              <Link to="/login" className="dropdown-link" onClick={() => setShowAccountMenu(false)}>
-                Login
-              </Link>
-              <Link to="/register" className="dropdown-link" onClick={() => setShowAccountMenu(false)}>
-                Register
-              </Link>
+              {currentUser ? (
+                <>
+                  <div className="account-profile">
+                    <p className="account-name">{currentUser.fullName}</p>
+                    <p className="account-email">{currentUser.email}</p>
+                  </div>
+                  <button
+                    type="button"
+                    className="dropdown-link dropdown-logout"
+                    onClick={() => {
+                      onLogout();
+                      setShowAccountMenu(false);
+                    }}
+                  >
+                    Logout
+                  </button>
+                </>
+              ) : (
+                <>
+                  <Link to="/login" className="dropdown-link" onClick={() => setShowAccountMenu(false)}>
+                    Login
+                  </Link>
+                  <Link to="/register" className="dropdown-link" onClick={() => setShowAccountMenu(false)}>
+                    Register
+                  </Link>
+                </>
+              )}
             </div>
           )}
         </li>

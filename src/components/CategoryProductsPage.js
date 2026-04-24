@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import './CategoryProductsPage.css';
 import { categoryProducts } from './productsData';
 
-function CategoryProductsPage({ title }) {
+function CategoryProductsPage({ title, onAddToCart }) {
   const location = useLocation();
 
   const defaultProducts = [1, 2, 3, 4, 5].map((item) => ({
@@ -15,8 +15,9 @@ function CategoryProductsPage({ title }) {
 
   const products = categoryProducts[title] || defaultProducts;
 
-  const handleAddToCart = (productName) => {
-    alert(`${productName} added to cart.`);
+  const handleAddToCart = (product) => {
+    onAddToCart(product);
+    alert(`${product.name} added to cart.`);
   };
 
   const handleBuyNow = (productName) => {
@@ -57,7 +58,7 @@ function CategoryProductsPage({ title }) {
               <button
                 type="button"
                 className="product-btn product-btn-secondary"
-                onClick={() => handleAddToCart(product.name)}
+                onClick={() => handleAddToCart(product)}
               >
                 Add to Cart
               </button>

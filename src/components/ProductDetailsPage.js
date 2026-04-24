@@ -3,7 +3,7 @@ import { useParams, Link, useLocation } from 'react-router-dom';
 import './ProductDetailsPage.css';
 import { getProductById } from './productsData';
 
-function ProductDetailsPage() {
+function ProductDetailsPage({ onAddToCart }) {
   const { productId } = useParams();
   const location = useLocation();
   const productFromState = location.state?.product;
@@ -23,6 +23,7 @@ function ProductDetailsPage() {
   }
 
   const handleAddToCart = () => {
+    onAddToCart(product);
     alert(`${product.name} added to cart.`);
   };
 

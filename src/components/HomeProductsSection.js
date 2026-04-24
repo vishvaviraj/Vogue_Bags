@@ -3,15 +3,16 @@ import { Link, useNavigate } from 'react-router-dom';
 import './HomeProductsSection.css';
 import { homeProducts } from './productsData';
 
-function HomeProductsSection() {
+function HomeProductsSection({ onAddToCart }) {
   const navigate = useNavigate();
 
   const handbags = homeProducts.filter((product) => product.category === 'Hand Bags');
   const backpacks = homeProducts.filter((product) => product.category === 'Back Pack');
   const kidsBags = homeProducts.filter((product) => product.category === 'Kids Bags');
 
-  const handleAddToCart = (productName) => {
-    alert(`${productName} added to cart.`);
+  const handleAddToCart = (product) => {
+    onAddToCart(product);
+    alert(`${product.name} added to cart.`);
   };
 
   const handleBuyNow = (id) => {
@@ -34,7 +35,7 @@ function HomeProductsSection() {
             </h3>
             <p className="home-product-price">{product.price}</p>
             <div className="home-product-actions">
-              <button type="button" className="home-btn home-btn-secondary" onClick={() => handleAddToCart(product.name)}>
+              <button type="button" className="home-btn home-btn-secondary" onClick={() => handleAddToCart(product)}>
                 Add to Cart
               </button>
               <button type="button" className="home-btn home-btn-primary" onClick={() => handleBuyNow(product.id)}>

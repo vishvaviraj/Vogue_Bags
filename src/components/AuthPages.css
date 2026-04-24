@@ -19,7 +19,7 @@
 }
 
 .auth-form label {
-  font-weight: 500;
+  font-weight: 600;
   color: #1f2937;
 }
 
@@ -57,4 +57,18 @@
 
 .auth-link:hover {
   text-decoration: underline;
+}
+
+.auth-message {
+  margin-top: 12px;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.auth-error {
+  color: #b91c1c;
+}
+
+.auth-success {
+  color: #166534;
 }
